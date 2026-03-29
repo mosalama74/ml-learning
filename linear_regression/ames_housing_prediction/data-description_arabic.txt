@@ -1,0 +1,853 @@
+MSSubClass: يحدد نوع المسكن المعني بالبيع.
+
+٢٠ منزل من طابق واحد، بُني عام ١٩٤٦ وما بعده، جميع الأنماط
+٣٠ منزل من طابق واحد، بُني عام ١٩٤٥ وما قبله
+٤٠ منزل من طابق واحد مع علية مُجهزة، جميع الأعمار
+٤٥ منزل من طابق ونصف - غير مُجهز، جميع الأعمار
+٥٠ منزل من طابق ونصف - مُجهز، جميع الأعمار
+٦٠ منزل من طابقين، بُني عام ١٩٤٦ وما بعده
+٧٠ منزل من طابقين، بُني عام ١٩٤٥ وما قبله
+٧٥ منزل من طابقين ونصف، جميع الأعمار
+٨٠ منزل مُقسّم أو مُتعدد المستويات
+٨٥ منزل ذو مدخل مُقسّم
+٩٠ منزل دوبلكس - جميع الأنماط والأعمار
+١٢٠ منزل من طابق واحد ضمن مشروع تطوير مُخطط (PUD) - بُني عام ١٩٤٦ وما بعده
+١٥٠ منزل مُدمج من طابق ونصف - مناسب لجميع الأعمار
+منزل مُدمج من طابقين - بُني عام ١٩٤٦ وما بعده
+منزل مُدمج متعدد المستويات - يشمل طابقًا منفصلاً/بهو
+منزل مُحوّل لعائلتين - جميع الأنماط والأعمار
+
+=======================================================================
+
+MSZoning: يحدد التصنيف العام لمنطقة البيع.
+
+A: زراعي
+C: تجاري
+FV: قرية عائمة سكنية
+I: صناعي
+RH: سكني عالي الكثافة
+RL: سكني منخفض الكثافة
+RP: سكني منخفض الكثافة مع حديقة
+RM: سكني متوسط ​​الكثافة
+
+=====================================================================
+
+LotFrontage: Linear feet of street connected to property --> واجهة قطعة الأرض: أقدام طولية من الشارع المتصل بالعقار
+
+=====================================================================
+
+LotArea: Lot size in square feet  --> مساحة الأرض: مساحة الأرض بالقدم المربع
+
+===========================================================================
+
+Street: Type of road access to property  -->  الشارع: نوع الطريق المؤدي إلى العقار
+
+     حصى      Grvl	 Gravel	
+     مرصوف  Pave	 Paved
+
+===========================================================================
+
+Alley: Type of alley access to property  -->  الممر: نوع مدخل الممر إلى العقار
+
+       Grvl	Gravel
+       Pave	Paved
+       NA 	No alley access   --> غير متوفر: لا يوجد مدخل من الممر
+
+===========================================================================
+
+
+LotShape: General shape of property             -->  شكل القطعة: الشكل العام للعقار
+						 	
+
+       Reg	Regular	                        -->  مستقيم
+       IR1	Slightly irregular              -->   غير منتظم قليلاً
+       IR2	Moderately Irregular            -->  غير منتظم إلى حد ما
+       IR3	Irregular                       --> غير منتظم
+
+=================================================================================
+
+LandContour: Flatness of the property  -->  تضاريس الأرض: استواء الأرض
+
+       Lvl	Near Flat/Level	       -->  مستوى شبه مستوٍ/مستوٍ
+
+       Bnk	Banked - Quick and significant rise from street grade to building  --> منحدر حاد - ارتفاع سريع وملحوظ من مستوى الشارع إلى المبنى  
+
+       HLS	Hillside - Significant slope from side to side  -->  منحدر حاد - انحدار ملحوظ من جانب إلى آخر
+
+       Low	Depression  -->  منخفض
+
+		
+=======================================================================================
+
+Utilities: Type of utilities available    -->  الخدمات: أنواع الخدمات المتاحة
+		
+       AllPub	All public Utilities (E,G,W,& S)  --> 	جميع الخدمات العامة (الكهرباء، الغاز، الماء، والصرف الصحي)
+
+       NoSewr	Electricity, Gas, and Water (Septic Tank)  -->  الكهرباء والغاز والماء (خزان صرف صحي)
+
+       NoSeWa	Electricity and Gas Only  -->   الكهرباء والغاز فقط
+
+       ELO	Electricity only  -->  الكهرباء فقط
+
+
+===================================================================================
+
+
+LotConfig: Lot configuration   -->   تكوين قطعة الأرض: تكوين قطعة الأرض
+
+       Inside	Inside lot   --> قطعة داخلية 
+
+             Corner	Corner lot     --> زاوية
+
+       CulDSac	Cul-de-sac  --> طريق مسدود
+
+       FR2	Frontage on 2 sides of property  -->  واجهة على جانبين من العقار
+
+       FR3	Frontage on 3 sides of property  -->  واجهة على ثلاثة جوانب من العقار
+
+====================================================================================
+
+
+LandSlope: Slope of property    -->  ميل الأرض: ميل الأرض
+		
+       Gtl	Gentle slope  -->  ميل طفيف
+
+       Mod	Moderate Slope	-->  ميل متوسط
+
+       Sev	Severe Slope  -->  ميل شديد
+
+====================================================================================
+
+Neighborhood: Physical locations within Ames city limits   -->  الأحياء: مواقع جغرافية داخل حدود مدينة أميس
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	South & West of Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+
+
+=============================================================================================
+
+Condition1: Proximity to various conditions
+	
+       Artery	Adjacent to arterial street
+       Feedr	Adjacent to feeder street	
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad
+       RRAn	Adjacent to North-South Railroad
+       PosN	Near positive off-site feature--park, greenbelt, etc.
+       PosA	Adjacent to postive off-site feature
+       RRNe	Within 200' of East-West Railroad
+       RRAe	Adjacent to East-West Railroad
+
+
+الشرط 1: القرب من ظروف مختلفة
+
+شارع رئيسي: مجاور لشارع رئيسي
+شارع فرعي: مجاور لشارع فرعي
+عادي: عادي
+خط سكة حديد شمال-جنوب: ضمن مسافة 200 قدم من خط سكة حديد شمال-جنوب
+خط سكة حديد شمال-جنوب: مجاور لخط سكة حديد شمال-جنوب
+موقع قريب من معلم إيجابي خارج الموقع - حديقة، حزام أخضر، إلخ
+موقع قريب من معلم إيجابي خارج الموقع
+خط سكة حديد شرق-غرب: ضمن مسافة 200 قدم من خط سكة حديد شرق-غرب
+خط سكة حديد شرق-غرب: مجاور لخط سكة حديد شرق-غرب
+
+
+===========================================================================================
+
+Condition2: Proximity to various conditions (if more than one is present)
+		
+       Artery	Adjacent to arterial street
+       Feedr	Adjacent to feeder street	
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad
+       RRAn	Adjacent to North-South Railroad
+       PosN	Near positive off-site feature--park, greenbelt, etc.
+       PosA	Adjacent to postive off-site feature
+       RRNe	Within 200' of East-West Railroad
+       RRAe	Adjacent to East-West Railroad
+	
+الشرط الثاني: القرب من شروط مختلفة (في حال وجود أكثر من شرط)
+
+شارع رئيسي: مجاور لشارع رئيسي
+شارع فرعي: مجاور لشارع فرعي
+عادي: عادي
+خط سكة حديد شمال-جنوب: ضمن مسافة 200 قدم من خط سكة حديد شمال-جنوب
+خط سكة حديد شمال-جنوب: مجاور لخط سكة حديد شمال-جنوب
+موقع قريب: بالقرب من معلم إيجابي خارج الموقع - حديقة، حزام أخضر، إلخ
+موقع قريب: مجاور لمعلم إيجابي خارج الموقع
+خط سكة حديد شرق-غرب: ضمن مسافة 200 قدم من خط سكة حديد شرق-غرب
+خط سكة حديد شرق-غرب: مجاور لخط سكة حديد شرق-غرب
+
+===========================================================================================
+
+
+BldgType: Type of dwelling
+		
+       1Fam	Single-family Detached	
+       2FmCon	Two-family Conversion; originally built as one-family dwelling
+       Duplx	Duplex
+       TwnhsE	Townhouse End Unit
+       TwnhsI	Townhouse Inside Unit
+
+نوع المبنى: نوع المسكن
+
+منزل عائلي منفصل
+مبنى مُحوّل إلى منزلين؛ بُني في الأصل كمسكن عائلي واحد
+دوبلكس
+تاون هاوس طرفي
+تاون هاوس داخلي
+
+
+==============================================================================================
+
+HouseStyle: Style of dwelling
+	
+       1Story	One story
+       1.5Fin	One and one-half story: 2nd level finished
+       1.5Unf	One and one-half story: 2nd level unfinished
+       2Story	Two story
+       2.5Fin	Two and one-half story: 2nd level finished
+       2.5Unf	Two and one-half story: 2nd level unfinished
+       SFoyer	Split Foyer
+       SLvl	Split Level
+
+نمط المنزل: نمط السكن
+
+طابق واحد
+طابق ونصف مُجهز: الطابق الثاني مُجهز
+طابق ونصف غير مُجهز: الطابق الثاني غير مُجهز
+طابقان
+طابقان ونصف مُجهز: الطابق الثاني مُجهز
+طابقان ونصف غير مُجهز: الطابق الثاني غير مُجهز
+بهو مُقسّم
+طابق مُقسّم
+
+==================================================================================
+
+OverallQual: Rates the overall material and finish of the house --> الجودة الإجمالية: تقيّم جودة المواد والتشطيبات العامة للمنزل
+ 
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average
+       5	Average
+       4	Below Average
+       3	Fair
+       2	Poor
+       1	Very Poor
+
+===================================================================================================
+
+OverallCond: Rates the overall condition of the house  --> الحالة العامة: تقيّم الحالة العامة للمنزل
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average	
+       5	Average
+       4	Below Average	
+       3	Fair
+       2	Poor
+       1	Very Poor
+
+======================================================================================================
+
+
+YearBuilt: Original construction date  -->  سنة البناء: تاريخ الإنشاء الأصلي          ## int --> date
+
+=======================================================================
+
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)   ## int --> date
+
+
+YearRemodAdd: تاريخ إعادة التصميم (نفس تاريخ البناء إذا لم تكن هناك إعادة تصميم أو إضافات)
+
+====================================================================================
+
+RoofStyle: Type of roof           -->  نمط السقف: نوع السقف
+
+       Flat	Flat
+       Gable	Gable
+       Gambrel	Gabrel (Barn)
+       Hip	Hip
+       Mansard	Mansard
+       Shed	Shed
+
+
+=====================================================================================
+
+RoofMatl: Roof material
+
+       ClyTile	Clay or Tile
+       CompShg	Standard (Composite) Shingle
+       Membran	Membrane
+       Metal	Metal
+       Roll	Roll
+       Tar&Grv	Gravel & Tar
+       WdShake	Wood Shakes
+       WdShngl	Wood Shingles
+
+مواد التسقيف: مواد التسقيف
+
+الطين أو البلاط
+القرميد المركب
+الغشاء
+المعدن
+اللفائف
+القار والقطران
+ألواح الخشب
+قرميد الخشب
+
+=======================================================================================
+
+Exterior1st: Exterior covering on house  --> الواجهة الخارجية: تغطية خارجية للمنزل
+
+       AsbShng	Asbestos Shingles   --> ألواح الأسبستوس
+       AsphShn	Asphalt Shingles    --> ألواح الأسفلت
+       BrkComm	Brick Common        --> طوب عادي
+       BrkFace	Brick Face          --> واجهة من الطوب
+       CBlock	Cinder Block        --> الطوب الخرساني
+       CemntBd	Cement Board        --> ألواح أسمنتية
+       HdBoard	Hard Board          --> ألواح صلبة 
+       ImStucc	Imitation Stucco    --> جص مقلد
+       MetalSd	Metal Siding        --> جوانب معدنية
+       Other	Other               --> اخر
+       Plywood	Plywood             --> الخشب الرقائقي (خشب معاكس)
+       PreCast	PreCast	            --> خرسانة مسبقة الصب
+       Stone	Stone                       --> حجر
+       Stucco	Stucco                       --> جص
+       VinylSd	Vinyl Siding        --> فينيل
+       Wd Sdng	Wood Siding         --> خشب جانبى
+       WdShing	Wood Shingles           --> ألواح خشبية
+
+
+
+
+====================================================================================================
+
+Exterior2nd: Exterior covering on house (if more than one material) --> الطبقة الخارجية الثانية: غطاء خارجي للمنزل (في حال استخدام أكثر من مادة)
+
+       AsbShng	Asbestos Shingles   --> ألواح الأسبستوس
+       AsphShn	Asphalt Shingles    --> ألواح الأسفلت
+       BrkComm	Brick Common        --> طوب عادي
+       BrkFace	Brick Face          --> واجهة من الطوب
+       CBlock	Cinder Block        --> الطوب الخرساني
+       CemntBd	Cement Board        --> ألواح أسمنتية
+       HdBoard	Hard Board          --> ألواح صلبة 
+       ImStucc	Imitation Stucco    --> جص مقلد
+       MetalSd	Metal Siding        --> جوانب معدنية
+       Other	Other               --> اخر
+       Plywood	Plywood             --> الخشب الرقائقي (خشب معاكس)
+       PreCast	PreCast	            --> خرسانة مسبقة الصب
+       Stone	Stone                       --> حجر
+       Stucco	Stucco                       --> جص
+       VinylSd	Vinyl Siding        --> فينيل
+       Wd Sdng	Wood Siding         --> خشب جانبى
+       WdShing	Wood Shingles           --> ألواح خشبية
+
+
+
+
+=============================================================================================
+
+MasVnrType: Masonry veneer type
+
+       BrkCmn	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       None	None
+       Stone	Stone
+
+نوع قشرة البناء: نوع قشرة البناء
+
+طوب عادي
+واجهة طوب
+كتلة خرسانية
+لا شيء
+حجر
+حجر
+
+============================================================================
+
+MasVnrArea: Masonry veneer area in square feet  -->  مساحة قشرة البناء: بالقدم المربع
+
+================================================================================
+
+ExterQual: Evaluates the quality of the material on the exterior  -->  يُقيّم جودة المواد الخارجية
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+
+==============================================================================
+
+ExterCond: Evaluates the present condition of the material on the exterior  -->  ExterCond: يُقيّم الحالة الحالية للمادة على السطح الخارجي
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+
+===============================================================================
+
+Foundation: Type of foundation  -->  الأساس: نوع الأساس
+		
+       BrkTil	Brick & Tile  -->  طوب بريستول وبلاط
+       CBlock	Cinder Block  --> بلوك خرساني
+       PConc	Poured Contrete	--> خرسانة مصبوبة
+       Slab	Slab  --> بلاطة خرسانية
+       Stone	Stone  --> حجر
+       Wood	Wood  -->  خشب
+
+================================================================================== 
+
+BsmtQual: Evaluates the height of the basement  -->  يُقيّم ارتفاع القبو
+
+       Ex	Excellent (100+ inches)	
+       Gd	Good (90-99 inches)
+       TA	Typical (80-89 inches)
+       Fa	Fair (70-79 inches)
+       Po	Poor (<70 inches
+       NA	No Basement
+
+============================================================================================
+
+BsmtCond: Evaluates the general condition of the basement  -->  تقييم الحالة العامة للقبو
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical - slight dampness allowed -->  عادي - رطوبة طفيفة مسموحة
+       Fa	Fair - dampness or some cracking or settling --> متوسط ​​- رطوبة أو بعض التشققات أو الهبوط
+       Po	Poor - Severe cracking, settling, or wetness --> ضعيف - تشققات أو هبوط أو رطوبة شديدة
+       NA	No Basement  -->  لا يوجد قبو
+
+
+==============================================================================================
+
+BsmtExposure: Refers to walkout or garden level walls  -->  مستوى التعرض للقبو: يشير إلى الجدران المطلة على الحديقة أو مستوى المدخل.
+
+       Gd	Good Exposure  -->  جيد: تعرض جيد
+       Av	Average Exposure (split levels or foyers typically score average or above) --> 	متوسط: تعرض متوسط ​​(عادةً ما تحصل المنازل ذات المستويات المنفصلة أو المداخل على متوسط ​​أو أعلى).
+
+       Mn	Mimimum Exposure  --> تعرض ضئيل
+       No	No Exposure  -->  لا يوجد تعرض
+       NA	No Basement  --> لا يوجد قبو
+
+=============================================================================================
+
+BsmtFinType1: Rating of basement finished area
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+
+BsmtFinType1: تقييم مساحة الطابق السفلي المُشطّبة
+
+GLQ: مساحة معيشة جيدة
+ALQ: مساحة معيشة متوسطة
+BLQ: مساحة معيشة أقل من المتوسط
+Rec: غرفة ترفيه متوسطة
+LwQ: جودة منخفضة
+Unf: غير مُشطّب
+NA: لا يوجد طابق سفلي
+
+========================================================================================
+
+
+BsmtFinSF1: Type 1 finished square feet  -->  BsmtFinSF1: امساحة الطابق السفلي المُشطّبة
+
+===================================================================================
+
+BsmtFinType2: Rating of basement finished area (if multiple types)
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+
+BsmtFinType2: تقييم مساحة الطابق السفلي  المُشطّبة (في حال وجود أنواع متعددة)
+
+GLQ: مساحة معيشة جيدة
+ALQ: مساحة معيشة متوسطة
+BLQ: مساحة معيشة أقل من المتوسط
+Rec: غرفة ترفيه متوسطة
+LwQ: جودة منخفضة
+Unf: غير مُشطّب
+NA: لا يوجد قبو
+
+===========================================================================================
+
+BsmtFinSF2: Type 2 finished square feet  -->  مساحة الطابق السفلي المُشطّبة (في حال وجود أنواع متعددة)
+
+=========================================================================================
+
+BsmtUnfSF: Unfinished square feet of basement area  --> BsmtUnfSF: مساحة الطابق السفلي غير المكتملة بالأقدام المربعة
+
+============================================================================================
+
+TotalBsmtSF: Total square feet of basement area  --> إجمالي مساحة الطابق السفلي (بالقدم المربع):
+
+==========================================================================================
+
+Heating: Type of heating  --> التدفئة: أنواع التدفئة
+		
+       Floor	Floor Furnace  --> التدفئة الأرضية
+       GasA	Gas forced warm air furnace  --> التدفئة بالهواء الدافئ القسري
+       GasW	Gas hot water or steam heat  -->  التدفئة بالماء الساخن أو البخار
+       Grav	Gravity furnace	  --> التدفئة بالجاذبية
+       OthW	Hot water or steam heat other than gas  --> التدفئة بالماء الساخن أو البخار (بخلاف الغاز)
+       Wall	Wall furnace  --> التدفئة الجدارية
+
+=============================================================================================
+
+HeatingQC: Heating quality and condition  --> HeatingQC: جودة وحالة التدفئة
+
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+
+===================================================================================
+
+CentralAir: Central air conditioning  --> تكييف مركزي: تكييف مركزي
+
+       N	No
+       Y	Yes     			##   object --> bool
+
+
+======================================================================================
+
+Electrical: Electrical system
+
+       SBrkr	Standard Circuit Breakers & Romex
+       FuseA	Fuse Box over 60 AMP and all Romex wiring (Average)	
+       FuseF	60 AMP Fuse Box and mostly Romex wiring (Fair)
+       FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)
+       Mix	Mixed
+
+
+الكهرباء: النظام الكهربائي
+
+قواطع الدائرة القياسية وأسلاك رومكس
+صندوق فيوزات A: أكثر من 60 أمبير، جميع الأسلاك من نوع رومكس (متوسط)
+صندوق فيوزات F: 60 أمبير، معظم الأسلاك من نوع رومكس (جيد)
+صندوق فيوزات P: 60 أمبير، معظم الأسلاك من نوع نوك آند تيوب (ضعيف)
+مختلط
+
+=============================================================================================
+
+1stFlrSF: First Floor square feet  --> مساحة الطابق الأول: قدم مربع
+
+============================================================================================
+
+2ndFlrSF: Second floor square feet  --> مساحة الطابق الثاني: قدم مربع
+
+================================================================================================
+
+
+LowQualFinSF: Low quality finished square feet (all floors)
+
+LowQualFinSF: أقدام مربعة ذات جودة تشطيب منخفضة (جميع الطوابق)
+
+======================================================================================
+
+GrLivArea: Above grade (ground) living area square feet
+
+مساحة المعيشة فوق مستوى الأرض: قدم مربع
+=====================================================================================
+
+BsmtFullBath: Basement full bathrooms  -->  حمام كامل في القبو: حمامات كاملة في القبو
+
+BsmtHalfBath: Basement half bathrooms  --> حمام جزئي في القبو: حمامات جزئية في القبو
+
+FullBath: Full bathrooms above grade  --> حمام كامل: حمامات كاملة فوق مستوى الأرض
+
+HalfBath: Half baths above grade  --> حمام جزئي: حمامات جزئية فوق مستوى الأرض
+
+BedroomAbvGr : Bedrooms above grade (does NOT include basement bedrooms) --> غرفة نوم: غرف نوم فوق مستوى الأرض (لا تشمل غرف نوم القبو) 
+
+ KitchenAbvGr : Kitchens above grade  --> مطبخ: مطابخ فوق مستوى الأرض
+
+========================================================================================
+
+KitchenQual: Kitchen quality
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+
+======================================================================================
+
+
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)  -->إجمالي الغرف فوق مستوى الأرض: (لا يشمل الحمامات)
+=================================================================================
+
+Functional: Home functionality (Assume typical unless deductions are warranted)
+
+       Typ	Typical Functionality
+       Min1	Minor Deductions 1
+       Min2	Minor Deductions 2
+       Mod	Moderate Deductions
+       Maj1	Major Deductions 1
+       Maj2	Major Deductions 2
+       Sev	Severely Damaged
+       Sal	Salvage only
+
+الوظائف: وظائف المنزل (يُفترض أنها طبيعية ما لم تكن هناك خصومات مبررة)
+
+الوظائف الطبيعية
+الحد الأدنى 1: خصومات طفيفة 1
+الحد الأدنى 2: خصومات طفيفة 2
+المتوسط: خصومات متوسطة
+الكبير 1: خصومات كبيرة 1
+الكبير 2: خصومات كبيرة 2
+الشديد: أضرار بالغة
+البيع: للخردة فقط
+
+==========================================================================================
+		
+Fireplaces: Number of fireplaces  -->  المواقد: عدد المواقد
+
+=========================================================================================
+
+
+FireplaceQu: Fireplace quality
+
+       Ex	Excellent - Exceptional Masonry Fireplace
+       Gd	Good - Masonry Fireplace in main level
+       TA	Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement
+       Fa	Fair - Prefabricated Fireplace in basement
+       Po	Poor - Ben Franklin Stove
+       NA	No Fireplace
+
+جودة المدفأة:
+
+ممتاز - مدفأة حجرية استثنائية
+جيد - مدفأة حجرية في الطابق الأرضي
+متوسط ​​- مدفأة جاهزة في غرفة المعيشة الرئيسية أو مدفأة حجرية في الطابق السفلي
+مقبول - مدفأة جاهزة في الطابق السفلي
+ضعيف - موقد بن فرانكلين
+غير متوفر - لا توجد مدفأة
+
+================================================================================================
+
+GarageType: Garage location
+		
+       2Types	More than one type of garage
+       Attchd	Attached to home
+       Basment	Basement Garage
+       BuiltIn	Built-In (Garage part of house - typically has room above garage)
+       CarPort	Car Port
+       Detchd	Detached from home
+       NA	No Garage
+		
+
+نوع المرآب: موقع المرآب
+
+نوعان: أكثر من نوع واحد من المرائب
+مُلحق بالمنزل
+مرآب في الطابق السفلي
+مرآب مُدمج (جزء من المنزل - عادةً ما يكون هناك مساحة فوقه)
+موقف سيارات مُظلل
+منفصل عن المنزل
+غير متوفر: لا يوجد مرآب
+
+======================================================================================
+
+GarageYrBlt: Year garage was built                             ## float --> date
+================================================================================
+
+GarageFinish: Interior finish of the garage
+
+       Fin	Finished
+       RFn	Rough Finished	
+       Unf	Unfinished
+       NA	No Garage
+
+تشطيب المرآب: التشطيب الداخلي للمرآب
+
+تشطيب نهائي
+تشطيب خشن
+غير مكتمل
+غير متوفر
+لا يوجد مرآب
+
+=========================================================================================
+
+GarageCars: Size of garage in car capacity  -->  عدد السيارات في المرآب: سعة المرآب بالسيارات
+
+
+GarageArea: Size of garage in square feet  --> مساحة المرآب: مساحة المرآب بالقدم المربع
+
+
+=======================================================================================
+
+GarageQual: Garage quality
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+============================================================================================
+
+GarageCond: Garage condition  --> حالة المرآب
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+
+========================================================================================================
+
+		
+PavedDrive: Paved driveway  --> ممر مرصوف 
+
+       Y	Paved                               --> مرصوف
+       P	Partial Pavement             --> رصف جزئي
+       N	Dirt/Gravel                     --> تراب/حصى
+
+====================================================================================================
+
+
+WoodDeckSF: Wood deck area in square feet  --> مساحة سطح خشبي (بالقدم المربع):                  
+
+OpenPorchSF: Open porch area in square feet  --> مساحة شرفة مفتوحة (بالقدم المربع):
+
+EnclosedPorch: Enclosed porch area in square feet  --> مساحة شرفة مغلقة (بالقدم المربع):
+
+3SsnPorch: Three season porch area in square feet  -->شرفة ثلاثية المواسم: مساحة الشرفة المُغطاة بشبكة واقية من الحشرات (بالقدم المربع)
+
+ScreenPorch: Screen porch area in square feet  -->  شرفة مُغطاة بشبكة واقية من الحشرات (بالقدم المربع)
+
+PoolArea: Pool area in square feet  --> منطقة المسبح: مساحة المسبح (بالقدم المربع)
+
+===============================================================================================
+
+PoolQC: Pool quality  --> جودة المسبح
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       NA	No Pool
+
+===================================================================================
+
+Fence: Fence quality               --> السياج: جودة السياج
+		
+       GdPrv	Good Privacy                           --> خصوصية جيدة
+       MnPrv	Minimum Privacy                        --> خصوصية محدودة
+       GdWo	Good Wood                              --> خشب جيد
+       MnWw	Minimum Wood/Wire                      --> خشب/سلك محدود
+       NA	No Fence                               --> لا يوجد سياج
+
+=======================================================================================
+
+MiscFeature: Miscellaneous feature not covered in other categories
+		
+       Elev	Elevator
+       Gar2	2nd Garage (if not described in garage section)
+       Othr	Other
+       Shed	Shed (over 100 SF)
+       TenC	Tennis Court
+       NA	None
+
+ميزة متنوعة: ميزة متنوعة غير مشمولة في الفئات الأخرى
+
+مصعد
+مرآب ثانٍ (إن لم يُذكر في قسم المرآب)
+أخرى
+مخزن (أكثر من 100 قدم مربع)
+ملعب تنس
+لا يوجد
+
+==================================================================================
+
+
+MiscVal: $Value of miscellaneous feature  --> قيمة الميزات المتنوعة: قيمة الميزة المتنوعة
+
+MoSold: Month Sold (MM)   --> شهر البيع: شهر البيع      ## int --> date
+
+
+YrSold: Year Sold (YYYY)  --> سنة البيع: سنة البيع       ## int --> date
+
+
+============================================================================================
+
+SaleType: Type of sale   --> نوع البيع 
+		
+              WD  	Warranty Deed - Conventional                -->  سند ضمان - تقليدي
+       CWD	Warranty Deed - Cash                        --> سند ضمان - نقداً
+       VWD	Warranty Deed - VA Loan                     --> سند ضمان - قرض إدارة شؤون المحاربين القدامى
+       New	Home just constructed and sold              --> منزل تم بناؤه وبيعه حديثاً
+       COD	Court Officer Deed/Estate                   --> سند ملكية/عقار موظف المحكمة
+       Con	Contract 15% Down payment regular terms     --> عقد بدفعة أولى 15%، شروط عادية
+       ConLw	Contract Low Down payment and low interest  --> عقد بدفعة أولى منخفضة وفائدة منخفضة
+       ConLI	Contract Low Interest                       --> عقد بفائدة منخفضة
+       ConLD	Contract Low Down                           --> عقد منخفض
+       Oth	Other 					    --> آخر 
+
+=================================================================================================
+
+
+SaleCondition: Condition of sale  --> شروط البيع
+
+       Normal	Normal Sale                                      --> بيع عادي
+
+       Abnorml	Abnormal Sale -  trade, foreclosure, short sale  --> بيع غير عادي - مقايضة، حجز عقاري، بيع سريع
+
+       AdjLand	Adjoining Land Purchase                          --> شراء الأراضي المجاورة
+
+       Alloca	Allocation - two linked properties with separate deeds, typically condo with a garage unit  -->	
+
+				التخصيص - عقاران متصلان بسندات ملكية منفصلة، ​​وعادةً ما يكونان شقة سكنية مع وحدة مرآب.	
+		
+               Family	Sale between family members                     -->  بيع بين أفراد العائلة
+
+       Partial	Home was not completed when last assessed (associated with New Homes)  --> 
+                       لم يتم الانتهاء من بناء المنزل عند آخر تقييم له (مرتبط بالمنازل الجديدة)
+
+======================================================================================================
